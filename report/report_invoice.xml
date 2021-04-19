@@ -9,6 +9,13 @@
                 </t>
             </div>
         </xpath>
+        <xpath expr="//t[@t-set='address']" position="inside">
+            <div name="telefono"  t-if="o.partner_id.phone">
+                <span>Teléfono:
+                    <span t-field="o.partner_id.phone"></span>
+                </span>
+            </div>
+        </xpath>
         <xpath expr="//div[@id='total']" position="after">
             <div>
                 <span>Favor Realizar su pago vía Transferencia a Cuenta Corriente del Banco Popular RD$:812 960 581 - US$: 812 960 755</span>
